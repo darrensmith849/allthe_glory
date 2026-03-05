@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/media/album.jpg",
+        url: "/media/4f0992a6-4ba7-451c-b4dd-1642f6149b7d.jpg",
         width: 1200,
         height: 630,
         alt: "From Darkness To Light artwork"
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "All The Glory",
     description: site.description,
-    images: ["/media/album.jpg"]
+    images: ["/media/4f0992a6-4ba7-451c-b4dd-1642f6149b7d.jpg"]
   },
   robots: {
     index: true,
