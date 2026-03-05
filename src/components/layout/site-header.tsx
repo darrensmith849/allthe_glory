@@ -8,9 +8,9 @@ export function SiteHeader() {
         <Link href="/" className="font-display text-xl tracking-[0.08em]">
           {site.name}
         </Link>
-        <nav className="hidden gap-5 text-sm text-[var(--colour-accent-2)] md:flex">
+        <nav className="flex max-w-[68%] gap-4 overflow-x-auto text-sm text-[var(--colour-accent-2)] md:max-w-none md:gap-5">
           {site.nav.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-[var(--colour-ink)]">
+            <Link key={item.href} href={item.href} className="whitespace-nowrap transition hover:text-[var(--colour-ink)]">
               {item.label}
             </Link>
           ))}
