@@ -12,6 +12,8 @@ export function HeroComposite() {
           alt="From Darkness To Light album artwork"
           fill
           priority
+          sizes="100vw"
+          quality={95}
           className="object-cover"
         />
       </div>

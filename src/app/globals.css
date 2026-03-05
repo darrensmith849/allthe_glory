@@ -73,7 +73,9 @@ a {
     Arial,
     sans-serif;
   letter-spacing: 0.02em;
-  text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
 }
 
 .grain-overlay {
