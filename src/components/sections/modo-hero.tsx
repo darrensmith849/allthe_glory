@@ -48,12 +48,13 @@ export default function ModoHero() {
       </div>
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,8,14,0.24)_0%,rgba(9,8,14,0.68)_62%,rgba(9,8,14,0.92)_100%)]" />
+      <div className="grain-overlay pointer-events-none absolute inset-0 opacity-20" />
 
       <div className="relative mx-auto flex min-h-[88vh] w-full max-w-7xl items-end px-6 pb-20 pt-24 md:pb-24">
         <div className="max-w-6xl">
           <p className="text-xs uppercase tracking-[0.24em] text-[var(--colour-accent-1)]">All The Glory</p>
-          <h1 className="modo-hero-title mt-3 text-[var(--colour-ink)]">From Darkness To Light</h1>
-          <p className="mt-4 text-base text-[var(--colour-accent-2)]">Ⅎɹoɯ ᗡɐɹʞuǝss †o 𝕃Ɨ𝕘𝓱𝐓</p>
+          <h1 className="modo-title mt-3 max-w-[11ch] text-[var(--colour-ink)]">From Darkness To Light</h1>
+          <p className="subtitle-glyph mt-4 text-base text-[var(--colour-accent-2)]">Ⅎɹoɯ ᗡɐɹʞuǝss †o 𝕃Ɨ𝕘𝓱𝐓</p>
           <div className="mt-6">
             <CtaRow />
           </div>
