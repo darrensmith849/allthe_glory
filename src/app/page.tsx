@@ -4,6 +4,8 @@ import { CtaRow } from "@/components/ui/cta-row";
 import { VideoPlaceholder } from "@/components/media/video-placeholder";
 import { album } from "@/content/album";
 import { videos } from "@/content/videos";
+import { assets } from "@/content/assets";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -21,6 +23,14 @@ export default function HomePage() {
       </div>
 
       <StoryBlock id="the-story" />
+
+      <section className="mx-auto w-full max-w-6xl px-6 py-10">
+        <div className="overflow-hidden rounded-2xl border border-[rgba(244,240,232,0.16)]">
+          <div className="relative h-[420px] md:h-[520px]">
+            <Image src={assets.artist} alt="Artist portrait" fill className="object-cover" />
+          </div>
+        </div>
+      </section>
 
       <VideoPlaceholder href={videos[0]?.href} youtubeId={videos[0]?.youtubeId} />
 
