@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { videos } from "@/content/videos";
+import { instagramPosts, videos } from "@/content/videos";
 
 export default function VideosPage() {
   return (
@@ -19,6 +19,32 @@ export default function VideosPage() {
             </Link>
           </article>
         ))}
+      </div>
+
+      <div className="mt-14">
+        <h2 className="font-display text-3xl">Instagram Clips</h2>
+        <div className="mt-6 grid gap-5 md:grid-cols-3">
+          {instagramPosts.map((post) => (
+            <article key={post.href} className="rounded-xl border border-[rgba(244,240,232,0.14)] p-3">
+              <div className="overflow-hidden rounded-lg border border-[rgba(244,240,232,0.12)] bg-[rgba(244,240,232,0.03)]">
+                <iframe
+                  className="h-[440px] w-full"
+                  src={`${post.href}embed`}
+                  title={post.title}
+                  loading="lazy"
+                />
+              </div>
+              <Link
+                href={post.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-sm text-[var(--colour-glow)]"
+              >
+                Open on Instagram
+              </Link>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
