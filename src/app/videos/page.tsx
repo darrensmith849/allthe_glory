@@ -11,8 +11,11 @@ export default function VideosPage() {
           <article key={video.title} className="rounded-xl border border-[rgba(244,240,232,0.14)] p-6">
             <h2 className="font-display text-2xl">{video.title}</h2>
             <p className="mt-2 text-[var(--colour-accent-2)]">{video.description}</p>
+            <p className="mt-3 text-xs uppercase tracking-[0.12em] text-[var(--colour-accent-1)]">
+              {video.youtubeId ? `YouTube ID: ${video.youtubeId}` : "YouTube ID: set in src/content/videos.ts"}
+            </p>
             <Link href={video.href} className="mt-4 inline-block text-sm text-[var(--colour-glow)]">
-              Watch placeholder
+              {video.youtubeId ? "Watch on YouTube" : "Watch placeholder"}
             </Link>
           </article>
         ))}

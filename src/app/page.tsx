@@ -3,6 +3,7 @@ import { StoryBlock } from "@/components/story/story-block";
 import { CtaRow } from "@/components/ui/cta-row";
 import { VideoPlaceholder } from "@/components/media/video-placeholder";
 import { album } from "@/content/album";
+import { videos } from "@/content/videos";
 
 export default function HomePage() {
   return (
@@ -21,7 +22,7 @@ export default function HomePage() {
 
       <StoryBlock id="the-story" />
 
-      <VideoPlaceholder />
+      <VideoPlaceholder href={videos[0]?.href} youtubeId={videos[0]?.youtubeId} />
 
       <section className="mx-auto w-full max-w-6xl px-6 py-10">
         <div className="rounded-2xl border border-[rgba(244,240,232,0.16)] bg-[rgba(244,240,232,0.02)] p-8">
